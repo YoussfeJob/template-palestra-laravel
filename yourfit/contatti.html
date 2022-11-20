@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - YourFit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cssContatti.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo"> 
+            <img src="yf-logo-removebg-preview.png" id="logoImg">
+        </div>
+        <ul class="menu">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="offerte.html">Offerte</a></li>
+                <li> <a href="">Corsi</a></li>
+                <li> <a href="">Virtual tour</a></li>
+                <li> <a href="contatti.html">Contatti</a></li>
+        </ul>
+        <div class="cta">
+                <a href="" class="button">Scopri di più</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <section class="contact">
+        <div class="content">
+            <h2 class="med-text">Contattaci</h2>
+            <p>Sempre pronti e disponibili per eliminare ogni
+                tua incertezza e rispondere a qualsiasi domanda!
+            </p>   
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class = "fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Indirizzo</h3>
+                        <p>Via Giuseppe Soglia 8, 42124 Reggio nell'Emilia</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class = "fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p> info@your-fit.it </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class = "fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Telefono</h3>
+                        <p>+39 388 6364282 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2>Inviaci un Messaggio</h2>
+                    <div class="inputBox">
+                        <input type="text" name = "" required="required" id="name">
+                        <span>Nome e Cognome</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name = "" required="required" id="email">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                    <textarea required="required" id="messaggio"></textarea>
+                        <span>Scrivici un messaggio..</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" name = "" ></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="footer">
+        <div class="onde">
+            <div class="onda" id="ondaUno"></div>
+            <div class="onda" id="ondaDue"></div>
+            <div class="onda" id="ondaTre"></div>
+            <div class="onda" id="ondaQuattro"></div>
+        </div>
+        <ul class = "social_icon">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+        <ul class="menuF">
+            <li><a href="">Home</a></li>
+            <li><a href="">Offerte</a></li>
+            <li><a href="">Corsi</a></li>
+            <li><a href="">Visual Tour</a></li>
+            <li><a href="">Contatti</a></li>
+        </ul>
+        <p>@2022 YourFit | All Rights Reserved</p>
+    </div>
+
+
+
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".hamburger").on('click', function(){
+                $(".menu").toggleClass("menu--open"); 
+            });
+        });
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+               Host : "smtp.gmail.com",
+               Username : "",
+               Password : "",
+               To : 'holaboi',
+               From : document.getElementById("email").value,
+               Subject : "New contact from enquiry",
+               Body : "Nome e Cognome: " + document.getElementById("name").value
+                        + "<br>  Email: " + document.getElementById("email").value
+                        + "<br>  Messaggio: " +document.getElementById("messaggio").value
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
