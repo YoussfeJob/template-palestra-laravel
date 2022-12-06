@@ -17,12 +17,40 @@
 
 .btn-more {
     background-color: var(--first);
+    transition: background-color 250ms;
 }
 
 .btn-more:hover {
     background-color: rgb(162, 39, 35);
 }
 
+.nav-item {
+    transition: background-color 250ms;
+}
+
 .nav-item:hover {
     background-color: var(--first);
+}
+
+/* hero section */
+
+.hero-bg {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    z-index: 4;
+}
+
+.hero-intro {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-text {
+    font-size: 70px;
+    font-weight: 900;
 }
