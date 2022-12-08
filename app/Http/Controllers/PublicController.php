@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
-    public function index(){
-        return view('homepage');
+    public function index(Request $request){
+            $request->session()->decrement('toggle');
+            return view('homepage');
+    }
+
+    public function offerte(){
+        return view('offerte');
     }
 }

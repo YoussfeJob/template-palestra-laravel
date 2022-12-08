@@ -1,1 +1,6 @@
-console.log("hello world");
+// sezione modale
+const myModalEl = document.getElementById("modalButton");
+
+window.onload = () => {
+    myModalEl.click();
+};

@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PublicController::class, 'index'])->name('homepage');
+Route::get('/offerte', [PublicController::class, 'offerte'])->name('offerte');

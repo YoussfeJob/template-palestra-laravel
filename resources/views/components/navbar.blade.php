@@ -12,7 +12,7 @@
           <a class="text-white nav-link active" aria-current="page" href="#">Cazzo</a>
         </li>
         <li class="nav-item py-1 px-3 m-1 rounded">
-          <a class="text-white nav-link" href="#">Offerte</a>
+          <a class="text-white nav-link" href="{{route('offerte')}}">Offerte</a>
         </li>
         <li class="nav-item py-1 px-3 m-1 rounded">
           <a class="text-white nav-link" href="#">Corsi</a>
