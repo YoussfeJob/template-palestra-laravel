@@ -1,6 +1,15 @@
 :root {
-    --first: #c4302b;
+    --first: rgb(196, 48, 43);
     --second: rgb(0, 0, 0);
+}
+
+.my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+body {
+    background-color: var(--second);
 }
 
 .bg-navbar {
@@ -27,46 +36,37 @@
 .nav-item:hover {
     background-color: var(--first);
 }
+.active {
+    background-color: var(--first);
+}
 
 /* modal */
-.modal-left {
-    background: rgb(196, 48, 43);
-    background: radial-gradient(
-        circle,
-        rgba(196, 48, 43, 1) 36%,
-        rgba(138, 35, 31, 1) 100%
-    );
+.modal-content-bg {
+    background: url(/public/media/modal-bg.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.modal-right {
-    background: rgb(10, 10, 10);
-    background: radial-gradient(
-        circle,
-        rgba(10, 10, 10, 1) 36%,
-        rgba(0, 0, 0, 1) 100%
-    );
-}
-
-.btn-modal-left {
+.modal-body-content {
     position: relative;
-    top: 70px;
-    background-color: var(--second);
-    color: white;
+    bottom: 90px;
 }
 
-.btn-modal-left:hover {
-    background-color: rgb(18, 18, 18);
-    color: white !important;
+.modal-text {
+    position: sticky;
+    font-family: "poppins", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    font-size: 95px;
+    transition: all 250ms;
 }
 
-.btn-modal-right {
+.modal-text:hover {
     position: relative;
-    top: 70px;
-    background-color: var(--first) !important;
-}
-
-.btn-modal-right:hover {
-    background-color: rgb(162, 39, 35) !important;
+    font-size: 100px;
+    -webkit-text-stroke: 3px var(--first);
+    color: var(--first);
 }
 
 /* hero section */
@@ -78,7 +78,7 @@
     height: 100%;
     width: 100%;
     padding: 20px;
-    z-index: 4;
+    z-index: 1;
 }
 
 .hero-intro {
@@ -90,4 +90,78 @@
 .hero-text {
     font-size: 70px;
     font-weight: 900;
+}
+
+.quote-text {
+    font-size: 60px;
+    font-weight: 450;
+}
+.quote-img {
+    width: 90%;
+    aspect-ratio: 1;
+}
+
+.rounded-border {
+    border-radius: 30px;
+}
+
+/* sezione offerte */
+
+.pricing-card {
+    background-color: var(--second);
+    cursor: pointer;
+    transition: 0.3s linear;
+    max-width: 400px;
+    border-radius: 32px;
+    border: 2px solid var(--first);
+    transition: transform 0.2s;
+    max-width: 300px;
+}
+
+.pricing-card:hover {
+    transform: scale(1.2);
+}
+
+.pricing-card-header {
+    background-color: var(--first);
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+    box-shadow: 0 0 0 9em var(--first);
+}
+
+.price {
+    font-size: 70px;
+    color: var(--first);
+    transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+    color: #fff;
+}
+
+/* sezione login */
+.container-login {
+    background: url(/public/media/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-login {
+    margin-top: 200px;
+    width: 50%;
 }

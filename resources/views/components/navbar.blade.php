@@ -8,8 +8,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item py-1 px-3 m-1 rounded">
-          <a class="text-white nav-link active" aria-current="page" href="#">Cazzo</a>
+        <li class="nav-item py-1 px-3 m-1 rounded {{Route::is('homepage') ? 'active' : ''}}">
+          <a class="text-white nav-link " aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item py-1 px-3 m-1 rounded">
           <a class="text-white nav-link" href="{{route('offerte')}}">Offerte</a>

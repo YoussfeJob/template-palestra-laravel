@@ -1,3 +1,5 @@
+@import "./fonts/poppins-v20-latin.css";
 @import "./fonts/inter-v12-latin.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 @import "bootstrap";
 @import "style";
