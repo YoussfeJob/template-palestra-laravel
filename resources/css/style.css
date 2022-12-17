@@ -20,7 +20,9 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+/* sezione navbar */
 .btn-more {
+    cursor: pointer;
     background-color: var(--first);
     transition: background-color 250ms;
 }
@@ -96,6 +98,14 @@ body {
     font-size: 60px;
     font-weight: 450;
 }
+
+@media only screen and (max-width: 768px) {
+    .quote-text {
+        font-size: 35px;
+        font-weight: 450;
+    }
+}
+
 .quote-img {
     width: 90%;
     aspect-ratio: 1;
@@ -161,7 +171,71 @@ body {
     background-size: cover;
 }
 
+.user-icon {
+    left: 10px;
+    top: 5px;
+    font-size: 50px;
+}
+
+.login-input,
+.login-input:focus,
+.login-input:-webkit-autofill,
+.login-input:-webkit-autofill:hover,
+.login-input:-webkit-autofill:focus,
+.login-input:-webkit-autofill:active {
+    position: absolute !important;
+    padding: 20px 0px 20px 80px;
+    border-radius: 32px !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    box-shadow: none;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-group {
+    margin-bottom: 35px;
+}
+
 .form-login {
     margin-top: 200px;
-    width: 50%;
+    width: 40%;
+}
+.login-btn {
+    background-color: var(--first);
+    color: #fff;
+    width: 100% !important;
+    border-radius: 32px;
+}
+.login-btn:hover {
+    background-color: rgb(162, 39, 35);
+}
+@media only screen and (max-width: 1200px) {
+    .form-login {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .form-login {
+        width: 100%;
+    }
+}
+
+/* register-section */
+.register-bg {
+    background-color: rgba(0, 0, 0, 0.503);
+}
+
+.register-input,
+.register-input:focus,
+.register-input:-webkit-autofill,
+.register-input:-webkit-autofill:hover,
+.register-input:-webkit-autofill:focus,
+.register-input:-webkit-autofill:active {
+    border: none;
+    border-bottom: 4px solid var(--first) !important;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
