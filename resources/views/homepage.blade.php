@@ -79,7 +79,38 @@
             </div>
         </div>
     </div>
+    {{-- sezione virtual tour (da spostare nella vista tour)--}}
+    <div class="container-fluid my-100">
+        <div class="row">
+            <h1 class="text-white text-center fw-bold my-5" style="font-size: 100px">Virtual Tour</h1>
+            <div class="col d-flex justify-content-center">
+                <iframe width='1706' height='960' src='https://my.matterport.com/show/?m=Tyajr7PDCN1' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
 
-    {{-- <iframe width='853' height='480' src='https://my.matterport.com/show/?m=Tyajr7PDCN1' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe> --}}
+            </div>
+        </div>
+    </div>
+    {{-- you can find us there --}}
+    <div class="container-fluid my-100">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex text-start text-lg-start mt-5 justify-content-center align-items-center">
+                <div>
+                    <h1 class="fw-bold text-white  m-0" style="font-size: 100px">dove ci trovi?</h1>
+                    <h3 class="text-white quote-text m-0">Aperti <span style="color: rgb(196, 48, 43)">24/7</span> tutto l'anno!</h3>
+                    <img src="/media/yf-logo-no-bg.png" class="d-block ms-auto" alt="Logo YourFit" height="70">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.6996713913695!2d10.61483141544158!3d44.70533019177722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47801c6e93c8cc31%3A0x47bc692d6d7f7d57!2sYOUR%20FIT!5e0!3m2!1sit!2sit!4v1667656018450!5m2!1sit!2sit"
+                width="900"
+                height="600"
+                style="width: 100%"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+        </div>
+    </div>
+
 
 </x-layout>

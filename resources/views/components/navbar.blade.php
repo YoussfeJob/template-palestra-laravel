@@ -33,7 +33,7 @@
       @guest
       {{-- login --}}
       <div class="py-1 px-2 m-1 rounded">
-        <a class="text-white nav-link" href="{{route('login')}}">accedi</a>
+        <a class="text-white nav-link" href="{{route('login')}}">Accedi</a>
       </div>
       {{-- register --}}
       <div class="px-3 py-3 my-lg-3 m-1 rounded-pill btn-more">

@@ -14,6 +14,7 @@ body {
 
 .bg-navbar {
     background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
 
 * {
@@ -40,6 +41,12 @@ body {
 }
 .active {
     background-color: var(--first);
+}
+
+.scrolled {
+    background-color: var(--second);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* modal */
@@ -238,4 +245,70 @@ body {
     box-shadow: none;
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+/*Footer*/
+
+.footer {
+    background-color: var(--first);
+}
+
+.social_icon a {
+    transition: 0.5s;
+}
+
+.social_icon a:hover {
+    transform: translateY(-10px);
+}
+
+.menuF a:hover {
+    opacity: 1 !important;
+}
+
+.onda {
+    top: -100px;
+    height: 100px;
+    background: url(/public/media/wave.png);
+    background-size: 1000px 100px;
+}
+
+.onda#ondaUno {
+    z-index: 5;
+    animation: animateWave 4s linear infinite;
+}
+
+.onda#ondaDue {
+    z-index: 4;
+    bottom: 10px;
+    animation: animateWave02 4s linear infinite;
+}
+
+.onda#ondaTre {
+    z-index: 5;
+    bottom: 15;
+    animation: animateWave 3s linear infinite;
+}
+
+.onda#ondaQuattro {
+    z-index: 4;
+    bottom: 20px;
+    animation: animateWave02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }
