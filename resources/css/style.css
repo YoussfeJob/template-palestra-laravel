@@ -268,6 +268,7 @@ body {
 
 .footer {
     background-color: var(--first);
+    z-index: 999;
 }
 
 .social_icon a {
@@ -287,27 +288,28 @@ body {
     height: 100px;
     background: url(/public/media/wave.png);
     background-size: 1000px 100px;
+    z-index: 999;
 }
 
 .onda#ondaUno {
-    z-index: 5;
+    z-index: 999;
     animation: animateWave 4s linear infinite;
 }
 
 .onda#ondaDue {
-    z-index: 4;
+    z-index: 998;
     bottom: 10px;
     animation: animateWave02 4s linear infinite;
 }
 
 .onda#ondaTre {
-    z-index: 5;
+    z-index: 999;
     bottom: 15;
     animation: animateWave 3s linear infinite;
 }
 
 .onda#ondaQuattro {
-    z-index: 4;
+    z-index: 998;
     bottom: 20px;
     animation: animateWave02 3s linear infinite;
 }

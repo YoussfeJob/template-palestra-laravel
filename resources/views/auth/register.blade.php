@@ -1,5 +1,5 @@
 <x-layout>
-<div class="vh-100 container-login overflow-hidden">
+<div class="min-vh-100 container-login overflow-hidden">
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-center">
@@ -36,5 +36,6 @@
             </div> --}}
         </div>
     </div>
+    <x-footer />
 </div>
 </x-layout>
