@@ -21,6 +21,23 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--first);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(162, 39, 35);
+}
+
 /* sezione navbar */
 .btn-more {
     cursor: pointer;
