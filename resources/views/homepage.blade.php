@@ -96,12 +96,12 @@
                 <div>
                     <h1 class="fw-bold text-white  m-0" style="font-size: 100px">dove ci trovi?</h1>
                     <h3 class="text-white quote-text m-0">Aperti <span style="color: rgb(196, 48, 43)">24/7</span> tutto l'anno!</h3>
-                    <img src="/media/yf-logo-no-bg.png" class="d-block ms-auto" alt="Logo YourFit" height="70">
+                    <img src="/media/MyFit.png" class="d-block ms-auto" alt="Logo YourFit" height="70">
                 </div>
             </div>
             <div class="col-12 col-lg-6">
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.6996713913695!2d10.61483141544158!3d44.70533019177722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47801c6e93c8cc31%3A0x47bc692d6d7f7d57!2sYOUR%20FIT!5e0!3m2!1sit!2sit!4v1667656018450!5m2!1sit!2sit"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.25709882771!2d12.395915358574248!3d41.910241486180055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%20RM!5e0!3m2!1sit!2sit!4v1678805489333!5m2!1sit!2sit"
                 width="900"
                 height="600"
                 style="width: 100%"

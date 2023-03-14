@@ -13,13 +13,13 @@
                   <li><a class="d-inline-block" href="#"><i class="fa-brands fs-2 text-white fa-instagram"></i></a></li>
                 </ul>
                 <ul class="d-flex justify-content-center menuF list-unstyled p-0">
-                  <li><a class="fs-4 text-white text-decoration-none opacity-75 me-3" href="">Home</a></li>
+                  <li><a class="fs-5 text-white text-decoration-none opacity-75 me-3" href="">Home</a></li>
                   <li><a class="fs-5 text-white text-decoration-none opacity-75 me-3" href="">Offerte</a></li>
                   <li><a class="fs-5 text-white text-decoration-none opacity-75 me-3" href="">Corsi</a></li>
                   <li><a class="fs-5 text-white text-decoration-none opacity-75 me-3" href="">Tour</a></li>
                   <li><a class="fs-5 text-white text-decoration-none opacity-75" href="">Contatti</a></li>
                 </ul>
-                <p class="text-white text-center">@2022 YourFit | All Rights Reserved</p>
+                <p class="text-white text-center">@2022 Youssfe Jobrane | All Rights Reserved</p>
               </div>
         </div>
     </div>

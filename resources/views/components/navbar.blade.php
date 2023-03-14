@@ -1,8 +1,8 @@
 <div class="container bg-navbar fixed-top">
   <nav class="navbar navbar-dark navbar-expand-lg">
     {{-- navbar logo --}}
-    <a href="{{route('homepage')}}">
-      <img src="/media/yf-logo-no-bg.png" alt="Logo YourFit" height="50">
+    <a href="{{route('homepage')}}" class="me-3">
+      <img src="/media/MyFit.png" alt="Logo YourFit" height="50">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" ></span>
@@ -45,9 +45,9 @@
         <p class="mt-3">benvenuto {{Auth::user()->name}}</p>
       </div>
       {{-- logout --}}
-      <div class="px-3 py-3 my-lg-3 m-1 rounded-pill btn-more">
-        <a class="text-white nav-link" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">Logout</a>
-      </div>  
+      <a class="px-3 py-3 my-lg-3 m-1 text-decoration-none rounded-pill btn-more" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">
+        <div class="text-white nav-link">Logout</div>
+      </a>  
       <form action="{{route('logout')}}" class="d-none" id="logout-form" method="POST">@csrf</form>
       @endguest
     </div>
